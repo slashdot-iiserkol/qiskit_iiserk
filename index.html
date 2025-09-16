@@ -14,7 +14,7 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <img src="\assets\qiskit logo.svg" alt="Qiskit Logo">
+                    <img src="\assets\qiskit logo.svg" alt="Qiskit Logo" style="height: 30px;">
                     <span>Qiskit Fall Fest</span>
                 </div>
                 <ul class="nav-menu">
@@ -25,7 +25,10 @@
                         <a href="#event-details" class="nav-link">Event</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#past-events" class="nav-link">Past Events</a>
+                        <a href="#organizers" class="nav-link">Organizers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="archive.html" class="nav-link">Archive</a>
                     </li>
                 </ul>
                 <div class="hamburger">
@@ -42,24 +45,45 @@
         <div class="hero-background">
             <div class="quantum-particles"></div>
             <div class="quantum-circuit"></div>
+            <!-- Emoji Background Images -->
+            <div class="hero-emoji-theme-top"></div>
+            <div class="hero-emoji-cat-left"></div>
+            <div class="hero-emoji-theme-center"></div>
+            <div class="hero-emoji-qiskit-right"></div>
+            <div class="hero-emoji-entanglement-top"></div>
+            <div class="hero-emoji-atom-bottom"></div>
+            <div class="hero-emoji-qiskit3-left"></div>
         </div>
         <div class="hero-content">
             <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="ibm-text">IBM</span>
-                    <span class="qiskit-text">Qiskit</span>
-                </h1>
-                <h2 class="fall-fest-text">Fall Fest 2024</h2>
-                <div class="logo-placeholder">
-                    <div class="fall-fest-logo">
-                        <i class="fas fa-atom"></i>
-                        <span>Fall Fest</span>
-                    </div>
+                                
+                <!-- Subheading -->
+                <div class="hero-subheading">
+                    <h1 class="fest-title">Qiskit Fall Fest 2025</h1>
+                    <h2 class="chapter-title">Chapter IISER Kolkata</h2>
                 </div>
+                <!-- Main Badge -->
+                <div class="main-badge">
+                    <img src="assets/Badge_Dark.png" alt="Qiskit Fall Fest 2025 Badge">
+                </div>
+                <!-- Organizer Logos -->
+                <div class="organizer-logos">
+                    <div class="logos-container">
+                        <div class="logo-item">
+                            <img src="assets/IBM Quantum Logo.png" alt="IBM Quantum">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/SlashDot Main logo noBG W-01-02.png" alt="SlashDot">
+                        </div>
+                    </div>
+                </div>               
+                <!-- Event Date -->
                 <div class="event-date">
                     <span class="month">October</span>
                     <span class="days">1st - 4th</span>
                 </div>
+                
+                <!-- Register Button -->
                 <button class="register-btn" onclick="openRegistration()">
                     <span>REGISTER NOW</span>
                     <i class="fas fa-rocket"></i>
@@ -78,7 +102,7 @@
             <div class="about-content">
                 <div class="about-text">
                     <p class="highlight-text">Join us for an extraordinary journey into the world of quantum computing!</p>
-                    <p>The IBM Qiskit Fall Fest 2024 at IISER Kolkata is a premier quantum computing event that brings together students, researchers, and industry experts to explore the fascinating realm of quantum technologies.</p>
+                    <p>The IBM Qiskit Fall Fest 2025 at IISER Kolkata is a premier quantum computing event that brings together students, researchers, and industry experts to explore the fascinating realm of quantum technologies.</p>
                     <div class="features">
                         <div class="feature">
                             <i class="fas fa-users"></i>
@@ -98,15 +122,21 @@
                     </div>
                 </div>
                 <div class="about-visual">
-                    <div class="quantum-visual">
-                        <div class="qubit"></div>
-                        <div class="qubit"></div>
-                        <div class="qubit"></div>
-                        <div class="quantum-gate"></div>
-                    </div>
+                    <img src="assets/Badge.png" alt="Qiskit Fall Fest Illustration" class="full-illustration">
                 </div>
             </div>
         </div>
+        <!-- Quantum Visual Animation -->
+            <div class="schedule-quantum-visual">
+                <div class="quantum-visual">
+                    <div class="qubit"></div>
+                    <div class="qubit"></div>
+                    <div class="qubit"></div>
+                    <div class="quantum-gate">
+                        <img src="assets/Emojis/Qiskit_03.png" alt="Qiskit Logo">
+                    </div>
+                </div>
+            </div>
     </section>
 
     <!-- About Institute Section -->
@@ -115,7 +145,7 @@
             <h2 class="section-title">About IISER Kolkata</h2>
             <div class="institute-content">
                 <div class="institute-image">
-                    <img src="https://via.placeholder.com/500x300/1e293b/ffffff?text=IISER+Kolkata" alt="IISER Kolkata Campus">
+                    <img src="assets/iiser_k.jpg" alt="IISER Kolkata Campus">
                 </div>
                 <div class="institute-text">
                     <p>The Indian Institute of Science Education and Research (IISER) Kolkata is a premier autonomous institution established by the Ministry of Education, Government of India, for promotion of high quality science education and research in the country.</p>
@@ -145,6 +175,9 @@
             <h2 class="section-title">Event Details & Schedule</h2>
             <div class="schedule-container">
                 <div class="schedule-day" data-day="1">
+                    <div class="day-feature-image">
+                        <img src="Fall Fest Graphics/Illustration Exports/Illustration Crops/Crop_Einstein.png" alt="Einstein - Quantum Foundations">
+                    </div>
                     <div class="day-header">
                         <h3>Day 1 - October 1st</h3>
                         <span class="day-theme">Quantum Foundations</span>
@@ -175,6 +208,9 @@
                 </div>
 
                 <div class="schedule-day" data-day="2">
+                    <div class="day-feature-image">
+                        <img src="Fall Fest Graphics/Illustration Exports/Illustration Crops/Crop_Future.png" alt="Future - Quantum Algorithms">
+                    </div>
                     <div class="day-header">
                         <h3>Day 2 - October 2nd</h3>
                         <span class="day-theme">Quantum Algorithms</span>
@@ -205,6 +241,9 @@
                 </div>
 
                 <div class="schedule-day" data-day="3">
+                    <div class="day-feature-image">
+                        <img src="Fall Fest Graphics/Illustration Exports/Illustration Crops/Crop_Heisenbergpng.png" alt="Heisenberg - Quantum Applications">
+                    </div>
                     <div class="day-header">
                         <h3>Day 3 - October 3rd</h3>
                         <span class="day-theme">Quantum Applications</span>
@@ -235,6 +274,9 @@
                 </div>
 
                 <div class="schedule-day" data-day="4">
+                    <div class="day-feature-image">
+                        <img src="Fall Fest Graphics/Illustration Exports/Illustration Crops/Crop_Schrodinger.png" alt="Schrödinger - Showcase & Awards">
+                    </div>
                     <div class="day-header">
                         <h3>Day 4 - October 4th</h3>
                         <span class="day-theme">Showcase & Awards</span>
@@ -274,28 +316,12 @@
             <div class="organizer-grid">
                 <div class="organizer-card">
                     <div class="organizer-image">
-                        <img src="https://via.placeholder.com/200x200/6366f1/ffffff?text=Dr.A" alt="Dr. Amit Kumar">
+                        <img src="assets/Emojis/Timeline_01.png" alt="Dr. Priya Sharma">
                     </div>
                     <div class="organizer-info">
-                        <h3>Dr. Amit Kumar</h3>
-                        <p class="position">Event Chair</p>
-                        <p class="department">Department of Physics</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="organizer-card">
-                    <div class="organizer-image">
-                        <img src="https://via.placeholder.com/200x200/ec4899/ffffff?text=Dr.P" alt="Dr. Priya Sharma">
-                    </div>
-                    <div class="organizer-info">
-                        <h3>Dr. Priya Sharma</h3>
-                        <p class="position">Technical Lead</p>
-                        <p class="department">School of Mathematical Sciences</p>
+                        <h3>Pradeep Ramesh</h3>
+                        <p class="position">Lead Organizer and Speaker</p>
+                        <p class="department">Department of Physical Sciences</p>
                         <div class="social-links">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
                             <a href="#"><i class="fab fa-github"></i></a>
@@ -306,12 +332,12 @@
 
                 <div class="organizer-card">
                     <div class="organizer-image">
-                        <img src="https://via.placeholder.com/200x200/10b981/ffffff?text=R.M" alt="Rahul Mehta">
+                        <img src="assets/Emojis/Timeline_01.png" alt="Rahul Mehta">
                     </div>
                     <div class="organizer-info">
-                        <h3>Rahul Mehta</h3>
-                        <p class="position">Student Coordinator</p>
-                        <p class="department">PhD Student, Computer Science</p>
+                        <h3>Manish Behera</h3>
+                        <p class="position">Temp</p>
+                        <p class="department">Department of Physical Sciences, Slashdot Coordinator</p>
                         <div class="social-links">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
                             <a href="#"><i class="fab fa-github"></i></a>
@@ -319,10 +345,69 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="organizer-card">
                     <div class="organizer-image">
-                        <img src="https://via.placeholder.com/200x200/f59e0b/ffffff?text=S.R" alt="Sneha Roy">
+                        <img src="assets/Emojis/Timeline_01.png" alt="Rahul Mehta">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Manish Behera</h3>
+                        <p class="position">Temp</p>
+                        <p class="department">Department of Physical Sciences, Slashdot Coordinator</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="assets/Emojis/Timeline_01.png" alt="Rahul Mehta">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Manish Behera</h3>
+                        <p class="position">Temp</p>
+                        <p class="department">Department of Physical Sciences, Slashdot Coordinator</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="assets/Emojis/Timeline_01.png" alt="Rahul Mehta">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Manish Behera</h3>
+                        <p class="position">Temp</p>
+                        <p class="department">Department of Physical Sciences, Slashdot Coordinator</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="assets/Emojis/Timeline_01.png" alt="Rahul Mehta">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Manish Behera</h3>
+                        <p class="position">Temp</p>
+                        <p class="department">Department of Physical Sciences, Slashdot Coordinator</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="assets/Emojis/Timeline_01.png" alt="Sneha Roy">
                     </div>
                     <div class="organizer-info">
                         <h3>Sneha Roy</h3>
@@ -344,7 +429,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>IBM Qiskit Fall Fest 2024</h3>
+                    <h3>IBM Qiskit Fall Fest 2025</h3>
                     <p>Join us for an amazing quantum computing journey at IISER Kolkata</p>
                     <div class="footer-social">
                         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -364,25 +449,22 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p><i class="fas fa-envelope"></i> qiskit.fallfest@iiserkol.ac.in</p>
-                    <p><i class="fas fa-phone"></i> +91 33 6136 0000</p>
+                    <p><i class="fas fa-envelope"></i> slashdot@iiserkol.ac.in</p>
                     <p><i class="fas fa-map-marker-alt"></i> IISER Kolkata, Mohanpur, Nadia</p>
                 </div>
                 <div class="footer-section">
                     <h4>Partners</h4>
                     <div class="partner-logos">
-                        <img src="https://via.placeholder.com/80x40/ffffff/000000?text=IBM" alt="IBM">
-                        <img src="https://via.placeholder.com/80x40/ffffff/000000?text=Qiskit" alt="Qiskit">
-                        <img src="https://via.placeholder.com/80x40/ffffff/000000?text=IISER" alt="IISER">
+                        <img src="assets/IBM Quantum Logo.png" alt="IBM Quantum">
+                        <img src="assets/SlashDot Main logo noBG W-01-02.png" alt="IISER">
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 IBM Qiskit Fall Fest - IISER Kolkata. All rights reserved.</p>
+                <p>&copy; 2025 IBM Qiskit Fall Fest - IISER Kolkata. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
