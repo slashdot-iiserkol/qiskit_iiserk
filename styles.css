@@ -164,7 +164,7 @@ body {
         radial-gradient(circle at 20% 30%, #6366f1 2px, transparent 2px),
         radial-gradient(circle at 80% 70%, #ec4899 2px, transparent 2px),
         radial-gradient(circle at 60% 20%, #10b981 2px, transparent 2px);
-    background-size: 100px 100px, 150px 150px, 80px 80px;
+    background-size: 200px 200px, 250px 250px, 180px 180px;
     animation: floatParticles 20s ease-in-out infinite;
 }
 
@@ -701,6 +701,60 @@ body {
 
 .full-illustration:hover {
     transform: scale(1.05);
+}
+
+/* About Action Section - Know More Button */
+.about-action {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.know-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.know-more-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ec4899, #10b981);
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+.know-more-btn:hover::before {
+    left: 0;
+}
+
+.know-more-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+.know-more-btn i {
+    font-size: 1.2rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
 
 /* About Institute Section */
@@ -2072,5 +2126,531 @@ html {
     .gallery-filters {
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+/* ==================== QUANTUM CENTURY PAGE STYLES ==================== */
+
+/* Quantum Century Hero Section */
+.quantum-century-hero {
+    min-height: 80vh;
+    background: linear-gradient(135deg, #0a0b1e 0%, #1a1b3e 50%, #2a2b5e 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.century-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.century-bg-illustration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.15;
+    filter: blur(1px);
+}
+
+.quantum-particles-century {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 25% 40%, #6366f1 2px, transparent 6px),
+        radial-gradient(circle at 75% 60%, #ec4899 2px, transparent 6px),
+        radial-gradient(circle at 50% 80%, #10b981 2px, transparent 6px);
+    background-size: 250px 250px, 300px 300px, 200px 200px;
+    animation: floatParticles 250s ease-in-out infinite;
+}
+
+.century-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 2rem;
+    max-width: 1000px;
+}
+
+.century-text-images {
+    margin-bottom: 3rem;
+}
+
+.century-main-text {
+    height: 80px;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.5));
+    animation: pulse 3s infinite;
+}
+
+.century-subtitle-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.century-subtitle {
+    height: 50px;
+    filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.4));
+    animation: floatSlow 8s ease-in-out infinite;
+}
+
+.century-event-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.century-event-text {
+    height: 35px;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+    animation: floatSlow 10s ease-in-out infinite reverse;
+}
+
+.century-theme-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.century-theme-logo img {
+    height: 120px;
+    filter: drop-shadow(0 10px 25px rgba(99, 102, 241, 0.4));
+    animation: pulse 4s infinite;
+}
+
+/* Quantum Timeline Section */
+.quantum-timeline {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.timeline-intro {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #6366f1, #ec4899, #10b981);
+    transform: translateX(-50%);
+}
+
+.timeline-milestone {
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.timeline-milestone:nth-child(odd) .milestone-content {
+    padding-right: 55%;
+}
+
+.timeline-milestone:nth-child(even) .milestone-content {
+    padding-left: 55%;
+    text-align: right;
+}
+
+.milestone-year {
+    position: absolute;
+    left: 50%;
+    top: 1rem;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-family: 'Orbitron', monospace;
+    z-index: 3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.milestone-content {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.milestone-content:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(99, 102, 241, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.milestone-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(99, 102, 241, 0.5);
+}
+
+.timeline-milestone:nth-child(even) .milestone-image {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.timeline-milestone:nth-child(odd) .milestone-image {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.milestone-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.milestone-text h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.milestone-text p {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.milestone-impact {
+    display: inline-block;
+    background: linear-gradient(135deg, #ec4899, #10b981);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Quantum Impact Section */
+.quantum-impact {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.impact-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(99, 102, 241, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.impact-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.impact-card h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.impact-card p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* Why Qiskit Section */
+.why-qiskit {
+    padding: 6rem 0;
+    background: #0f172a;
+}
+
+.qiskit-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.qiskit-features {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.qiskit-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.qiskit-feature:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
+.qiskit-feature i {
+    font-size: 1.5rem;
+    color: #6366f1;
+    margin-top: 0.25rem;
+    min-width: 30px;
+}
+
+.qiskit-feature h4 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.qiskit-feature p {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.qiskit-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qiskit-badge {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(99, 102, 241, 0.3));
+    animation: floatSlow 12s ease-in-out infinite;
+}
+
+/* Quantum CTA Section */
+.quantum-cta {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-family: 'Orbitron', monospace;
+    background: linear-gradient(135deg, #6366f1, #ec4899, #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-btn.primary {
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+    color: white;
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+}
+
+.cta-btn.secondary {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(99, 102, 241, 0.5);
+    color: #6366f1;
+    backdrop-filter: blur(10px);
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+}
+
+.cta-btn.primary:hover {
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+.cta-btn.secondary:hover {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: #6366f1;
+    color: #ffffff;
+}
+
+/* Responsive Design for Quantum Century Page */
+@media (max-width: 768px) {
+    .century-main-text {
+        height: 60px;
+    }
+    
+    .century-subtitle {
+        height: 40px;
+    }
+    
+    .century-event-text {
+        height: 28px;
+    }
+    
+    .century-theme-logo img {
+        height: 80px;
+    }
+    
+    .timeline-container::before {
+        left: 30px;
+    }
+    
+    .timeline-milestone:nth-child(odd) .milestone-content,
+    .timeline-milestone:nth-child(even) .milestone-content {
+        padding-left: 80px;
+        padding-right: 1rem;
+        text-align: left;
+    }
+    
+    .milestone-year {
+        left: 30px;
+        transform: none;
+    }
+    
+    .timeline-milestone:nth-child(even) .milestone-image,
+    .timeline-milestone:nth-child(odd) .milestone-image {
+        margin-left: 0;
+        margin-right: auto;
+    }
+    
+    .qiskit-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .century-main-text {
+        height: 50px;
+    }
+    
+    .century-subtitle {
+        height: 32px;
+    }
+    
+    .century-event-text {
+        height: 24px;
+    }
+    
+    .century-theme-logo img {
+        height: 60px;
+    }
+    
+    .century-subtitle-row,
+    .century-event-row {
+        gap: 1rem;
+    }
+    
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
     }
 }
