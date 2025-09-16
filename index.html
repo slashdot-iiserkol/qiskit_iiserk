@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Qiskit Fall Fest 2025 - IISER Kolkata</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="\assets\qiskit logo.svg" alt="Qiskit Logo">
+                    <span>Qiskit Fall Fest</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#about-institute" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#event-details" class="nav-link">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#past-events" class="nav-link">Past Events</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="quantum-particles"></div>
+            <div class="quantum-circuit"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="ibm-text">IBM</span>
+                    <span class="qiskit-text">Qiskit</span>
+                </h1>
+                <h2 class="fall-fest-text">Fall Fest 2024</h2>
+                <div class="logo-placeholder">
+                    <div class="fall-fest-logo">
+                        <i class="fas fa-atom"></i>
+                        <span>Fall Fest</span>
+                    </div>
+                </div>
+                <div class="event-date">
+                    <span class="month">October</span>
+                    <span class="days">1st - 4th</span>
+                </div>
+                <button class="register-btn" onclick="openRegistration()">
+                    <span>REGISTER NOW</span>
+                    <i class="fas fa-rocket"></i>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Event Section -->
+    <section id="about-event" class="about-event">
+        <div class="container">
+            <h2 class="section-title">About the Event</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="highlight-text">Join us for an extraordinary journey into the world of quantum computing!</p>
+                    <p>The IBM Qiskit Fall Fest 2024 at IISER Kolkata is a premier quantum computing event that brings together students, researchers, and industry experts to explore the fascinating realm of quantum technologies.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h3>Collaborative Learning</h3>
+                            <p>Work with peers and mentors on exciting quantum projects</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <h3>IBM Certification</h3>
+                            <p>Earn official IBM Qiskit certification upon completion</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-trophy"></i>
+                            <h3>Competitions</h3>
+                            <p>Participate in quantum hackathons and coding challenges</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="quantum-visual">
+                        <div class="qubit"></div>
+                        <div class="qubit"></div>
+                        <div class="qubit"></div>
+                        <div class="quantum-gate"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Institute Section -->
+    <section id="about-institute" class="about-institute">
+        <div class="container">
+            <h2 class="section-title">About IISER Kolkata</h2>
+            <div class="institute-content">
+                <div class="institute-image">
+                    <img src="https://via.placeholder.com/500x300/1e293b/ffffff?text=IISER+Kolkata" alt="IISER Kolkata Campus">
+                </div>
+                <div class="institute-text">
+                    <p>The Indian Institute of Science Education and Research (IISER) Kolkata is a premier autonomous institution established by the Ministry of Education, Government of India, for promotion of high quality science education and research in the country.</p>
+                    <div class="institute-stats">
+                        <div class="stat">
+                            <h3>2006</h3>
+                            <p>Established</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Faculty & Students</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5</h3>
+                            <p>Schools of Science</p>
+                        </div>
+                    </div>
+                    <p>Located in the culturally rich city of Kolkata, IISER Kolkata has been at the forefront of scientific research and education, making it the perfect venue for this quantum computing event.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section id="event-details" class="event-details">
+        <div class="container">
+            <h2 class="section-title">Event Details & Schedule</h2>
+            <div class="schedule-container">
+                <div class="schedule-day" data-day="1">
+                    <div class="day-header">
+                        <h3>Day 1 - October 1st</h3>
+                        <span class="day-theme">Quantum Foundations</span>
+                    </div>
+                    <div class="day-events">
+                        <div class="event-item">
+                            <span class="time">09:00 - 10:00</span>
+                            <div class="event-info">
+                                <h4>Registration & Welcome</h4>
+                                <p>Check-in and opening ceremony</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <span class="time">10:00 - 12:00</span>
+                            <div class="event-info">
+                                <h4>Introduction to Quantum Computing</h4>
+                                <p>Fundamentals and Qiskit basics</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <span class="time">14:00 - 17:00</span>
+                            <div class="event-info">
+                                <h4>Hands-on Workshop</h4>
+                                <p>Building your first quantum circuit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-day" data-day="2">
+                    <div class="day-header">
+                        <h3>Day 2 - October 2nd</h3>
+                        <span class="day-theme">Quantum Algorithms</span>
+                    </div>
+                    <div class="day-events">
+                        <div class="event-item">
+                            <span class="time">09:00 - 11:00</span>
+                            <div class="event-info">
+                                <h4>Quantum Algorithms Deep Dive</h4>
+                                <p>Shor's and Grover's algorithms</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <span class="time">11:30 - 13:00</span>
+                            <div class="event-info">
+                                <h4>Industry Talk</h4>
+                                <p>IBM Quantum Network presentation</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <span class="time">14:00 - 17:00</span>
+                            <div class="event-info">
+                                <h4>Team Formation & Project Start</h4>
+                                <p>Hackathon kicks off</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-day" data-day="3">
+                    <div class="day-header">
+                        <h3>Day 3 - October 3rd</h3>
+                        <span class="day-theme">Quantum Applications</span>
+                    </div>
+                    <div class="day-events">
+                        <div class="event-item">
+                            <span class="time">09:00 - 12:00</span>
+                            <div class="event-info">
+                                <h4>Project Development</h4>
+                                <p>Continuous hackathon work</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <span class="time">14:00 - 16:00</span>
+                            <div class="event-info">
+                                <h4>Quantum Machine Learning</h4>
+                                <p>Advanced applications workshop</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <span class="time">16:30 - 18:00</span>
+                            <div class="event-info">
+                                <h4>Mentorship Sessions</h4>
+                                <p>One-on-one guidance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-day" data-day="4">
+                    <div class="day-header">
+                        <h3>Day 4 - October 4th</h3>
+                        <span class="day-theme">Showcase & Awards</span>
+                    </div>
+                    <div class="day-events">
+                        <div class="event-item">
+                            <span class="time">09:00 - 12:00</span>
+                            <div class="event-info">
+                                <h4>Final Project Development</h4>
+                                <p>Last sprint before presentations</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <span class="time">14:00 - 16:00</span>
+                            <div class="event-info">
+                                <h4>Project Presentations</h4>
+                                <p>Teams showcase their work</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <span class="time">16:30 - 18:00</span>
+                            <div class="event-info">
+                                <h4>Awards & Closing Ceremony</h4>
+                                <p>Recognition and certificates</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers" class="organizers">
+        <div class="container">
+            <h2 class="section-title">Meet the Organizers</h2>
+            <div class="organizer-grid">
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="https://via.placeholder.com/200x200/6366f1/ffffff?text=Dr.A" alt="Dr. Amit Kumar">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Dr. Amit Kumar</h3>
+                        <p class="position">Event Chair</p>
+                        <p class="department">Department of Physics</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="https://via.placeholder.com/200x200/ec4899/ffffff?text=Dr.P" alt="Dr. Priya Sharma">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Dr. Priya Sharma</h3>
+                        <p class="position">Technical Lead</p>
+                        <p class="department">School of Mathematical Sciences</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="https://via.placeholder.com/200x200/10b981/ffffff?text=R.M" alt="Rahul Mehta">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Rahul Mehta</h3>
+                        <p class="position">Student Coordinator</p>
+                        <p class="department">PhD Student, Computer Science</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <img src="https://via.placeholder.com/200x200/f59e0b/ffffff?text=S.R" alt="Sneha Roy">
+                    </div>
+                    <div class="organizer-info">
+                        <h3>Sneha Roy</h3>
+                        <p class="position">Outreach Coordinator</p>
+                        <p class="department">MS Student, Physics</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IBM Qiskit Fall Fest 2024</h3>
+                    <p>Join us for an amazing quantum computing journey at IISER Kolkata</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about-event">About Event</a></li>
+                        <li><a href="#about-institute">About IISER</a></li>
+                        <li><a href="#event-details">Schedule</a></li>
+                        <li><a href="#organizers">Organizers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> qiskit.fallfest@iiserkol.ac.in</p>
+                    <p><i class="fas fa-phone"></i> +91 33 6136 0000</p>
+                    <p><i class="fas fa-map-marker-alt"></i> IISER Kolkata, Mohanpur, Nadia</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Partners</h4>
+                    <div class="partner-logos">
+                        <img src="https://via.placeholder.com/80x40/ffffff/000000?text=IBM" alt="IBM">
+                        <img src="https://via.placeholder.com/80x40/ffffff/000000?text=Qiskit" alt="Qiskit">
+                        <img src="https://via.placeholder.com/80x40/ffffff/000000?text=IISER" alt="IISER">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IBM Qiskit Fall Fest - IISER Kolkata. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
